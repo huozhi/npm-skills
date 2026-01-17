@@ -2,7 +2,11 @@
 
 A collection of skills for AI coding agents focused on npm library setup and best practices.
 
-Skills follow the [Agent Skills format](https://github.com/vercel-labs/agent-skills).
+## Installation
+
+```bash
+npx add-skill huozhi/npm-skills
+```
 
 ## Available Skills
 
@@ -41,17 +45,6 @@ Comprehensive guidance on setting up npm libraries with `package.json`, with a p
 - Node.js >= 20 (oldest currently-maintained LTS)
 - npm or compatible package manager
 
-## Installation
-
-```bash
-npx add-skill npm-skills
-```
-
-Or install from a specific path:
-
-```bash
-npx add-skill /path/to/npm-skills
-```
 
 ## Usage
 
