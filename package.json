@@ -1,0 +1,23 @@
+{
+  "name": "npm-skills",
+  "version": "1.0.0",
+  "description": "A collection of skills for AI coding agents focused on npm library setup and best practices",
+  "type": "module",
+  "main": "README.md",
+  "scripts": {},
+  "keywords": [
+    "npm",
+    "esm",
+    "package.json",
+    "agent",
+    "skill",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
