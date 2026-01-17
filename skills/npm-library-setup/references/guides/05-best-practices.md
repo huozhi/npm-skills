@@ -55,7 +55,7 @@ import { helper } from './helper';    // ❌
     "lodash": "^4.17.21"  // Used in src/index.js
   },
   "devDependencies": {
-    "bunchee": "^2.0.0",  // Build tool
+    "bunchee": "latest",  // Build tool
     "vitest": "^2.0.0"     // Test runner
   }
 }

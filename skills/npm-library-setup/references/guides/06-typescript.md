@@ -70,7 +70,7 @@ Add TypeScript-related fields:
     "test": "vitest"
   },
   "devDependencies": {
-    "bunchee": "^2.0.0",
+    "bunchee": "latest",
     "typescript": "^5.0.0",
     "@types/node": "^20.0.0",
     "vitest": "^2.0.0"

@@ -59,7 +59,7 @@ Update your `package.json` to support dual exports:
     "test": "vitest"
   },
   "devDependencies": {
-    "bunchee": "^2.0.0",
+    "bunchee": "latest",
     "vitest": "^2.0.0"
   },
   "engines": {

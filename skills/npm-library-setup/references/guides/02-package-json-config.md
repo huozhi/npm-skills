@@ -137,7 +137,7 @@ Development-only dependencies (build tools, test runners, etc.):
 ```json
 {
   "devDependencies": {
-    "bunchee": "^2.0.0",
+    "bunchee": "latest",
     "vitest": "^2.0.0",
     "@types/node": "^20.0.0"
   }

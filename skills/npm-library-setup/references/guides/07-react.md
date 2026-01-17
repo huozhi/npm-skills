@@ -34,7 +34,7 @@ Add React as a peer dependency:
     "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
-    "bunchee": "^2.0.0",
+    "bunchee": "latest",
     "react": "^18.0.0",
     "@types/react": "^18.0.0",
     "react-dom": "^18.0.0",
