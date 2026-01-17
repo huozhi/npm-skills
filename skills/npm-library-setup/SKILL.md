@@ -1,3 +1,8 @@
+---
+name: npm-library-setup
+description: Comprehensive guidance on setting up npm libraries with package.json, with a preference for ES Modules (ESM). Use when setting up npm packages, configuring ESM, TypeScript packages, or React component libraries.
+---
+
 # npm Library Setup with ESM
 
 This skill provides comprehensive guidance on setting up an npm library with `package.json`, with a preference for ES Modules (ESM).
@@ -10,7 +15,6 @@ This skill helps you create npm packages that:
 - Use bunchee for zero-config bundling
 - Use vitest for modern testing
 - Support TypeScript and React component libraries
-- Optionally support dual packages (CJS + ESM)
 
 ## When to Use This Skill
 
@@ -20,13 +24,11 @@ This skill helps you create npm packages that:
 - "Configure package.json for ESM"
 - "Set up a TypeScript npm package"
 - "Create a React component library"
-- "Set up dual package (CJS + ESM)"
 
 **Categories covered:**
 - Basic package setup with ESM
 - TypeScript package configuration
 - React component library setup
-- Dual package support (optional)
 - Build configuration with bunchee
 - Testing setup with vitest
 
@@ -111,7 +113,7 @@ Bunchee automatically compiles TypeScript and generates `.d.ts` files.
 Install React as dev dependency:
 
 ```bash
-npm install -D react @types/react react-dom @types/react-dom
+npm install -D react @types/react
 ```
 
 Configure `peerDependencies`:
@@ -119,32 +121,10 @@ Configure `peerDependencies`:
 ```json
 {
   "peerDependencies": {
-    "react": "^18.0.0 || ^19.0.0",
-    "react-dom": "^18.0.0 || ^19.0.0"
+    "react": "*"
   }
 }
 ```
-
-## Dual Package (Optional)
-
-If you need CommonJS support, configure bunchee:
-
-```json
-{
-  "scripts": {
-    "build": "bunchee ./src/index.ts --format cjs,esm --out-dir dist"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/types/index.d.ts",
-      "import": "./dist/esm/index.mjs",
-      "require": "./dist/cjs/index.cjs"
-    }
-  }
-}
-```
-
-**Note:** For modern packages, ESM-only is recommended.
 
 ## Best Practices
 
@@ -153,8 +133,7 @@ If you need CommonJS support, configure bunchee:
 3. ✅ Use kebab-case for file paths
 4. ✅ Separate runtime dependencies from dev dependencies
 5. ✅ Specify Node.js version using oldest maintained LTS
-6. ✅ Write source in ESM syntax, let bundler handle CJS if needed
-7. ✅ Test both formats if building dual package
+6. ✅ Write source in ESM syntax
 
 ## Common Patterns
 
@@ -197,7 +176,6 @@ See `references/` directory for detailed guides:
 - Building and Testing
 - TypeScript Packages
 - React Packages
-- Dual Package Setup
 - Best Practices
 
 ## Examples
